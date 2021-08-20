@@ -1,7 +1,7 @@
 let db;
 
 // Create a new db request for a "budget" database.
-const request = indexedDB.open('BudgetDB', 2);
+const request = indexedDB.open('budgetdb', 2);
 
 request.onupgradeneeded = function (e) {
   console.log('Upgrade needed in IndexDB');
